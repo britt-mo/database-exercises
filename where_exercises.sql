@@ -1,4 +1,3 @@
 use employees;
 
-
-select * from employees where birth_date LIKE '%12-24';
+select emp_no, first_name, last_name from employees where first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya';
