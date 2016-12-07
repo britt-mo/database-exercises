@@ -1,4 +1,4 @@
 use employees;
 
 
-select * from employees where hire_date LIKE '199%';
+select * from employees where birth_date LIKE '%12-24';
