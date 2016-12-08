@@ -37,11 +37,7 @@ select count(*) from employees where gender = 'F';
 select count(*) AS 'Count of Genders', gender AS 'Gen' from employees
 GROUP BY gender;
 
-SELECT COUNT(first_name), first_name, last_name
-FROM employees
-WHERE first_name NOT LIKE '%a%'
-GROUP BY first_name, last_name
-ORDER BY count(first_name) desc;
+
 
 SELECT * from employees
 where first_name = 'Yonghong' and last_name = 'Codenie';
