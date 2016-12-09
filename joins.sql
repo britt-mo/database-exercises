@@ -133,3 +133,14 @@ WHERE emp_no IN(
   SELECT emp_no
   FROM dept_manager
   WHERE gender = 'F');
+
+
+SELECT departments.dept_name
+FROM departments, employees
+WHERE employees.emp_no IN(
+  SELECT dept_manager.emp_no
+  FROM dept_manager
+  WHERE gender = 'F')
+GROUP BY dept_name;
+
+
